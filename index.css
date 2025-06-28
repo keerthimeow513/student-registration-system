@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #e3f2fd; /* Soft light blue background */
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  color: #0d47a1;
+  padding: 20px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+.form-container, .table-container {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 800px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  row-gap: 15px;
+  column-gap: 10px;
+}
+
+label {
+  text-align: right;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #b0bec5;
+  font-size: 16px;
+}
+
+button[type=\"submit\"] {
+  grid-column: span 2;
+  padding: 10px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type=\"submit\"]:hover {
+  background-color: #1565c0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background-color: #1976d2;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f1f8ff;
+}
+
+button.action {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 4px;
+}
+
+button.reset {
+  background-color: #fbc02d;
+  color: black;
+}
+
+button.delete {
+  background-color: #e53935;
+  color: white;
+}
+
